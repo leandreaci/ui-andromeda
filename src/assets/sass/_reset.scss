@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  &,
+  &::after,
+  &::before {
+    box-sizing: border-box;
+    outline: none;
+  }
+}
+
+html {
+  line-height: 1.15;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+body, input, textarea, select, button {
+  font-synthesis: none;
+  -moz-font-feature-settings: 'kern';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: ltr;
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+.w-auto { width: auto !important; }
+.w-25 { width: 25% !important; }
+.w-50 { width: 50% !important; }
+.w-75 { width: 75% !important; }
+.w-100 { width: 100% !important; }
+
+.h-auto { height: auto !important; }
+.h-25 { height: 25% !important; }
+.h-50 { height: 50% !important; }
+.h-75 { height: 75% !important; }
+.h-100 { height: 100% !important; }
+
+.mh-25 { min-height: 25% !important; }
+.mh-50 { min-height: 50% !important; }
+.mh-75 { min-height: 75% !important; }
+.mh-100 { min-height: 100% !important; }
+
+.mxh-25 { max-height: 25% !important; }
+.mxh-50 { max-height: 50% !important; }
+.mxh-75 { max-height: 75% !important; }
+.mxh-100 { max-height: 100% !important; }

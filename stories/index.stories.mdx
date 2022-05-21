@@ -1,0 +1,65 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Home/Installation" />
+
+### @dilicorp/ui is a [React](https://reactjs.org) component library for [Sodexo](https://www.sodexo.com)
+
+## Getting Started
+### Install @dilicorp/ui:
+
+```sh
+npm install @dilicorp/ui
+```
+or
+```sh
+yarn add @dilicorp/ui
+```
+
+dilicorp-ui currently requires React 16.8 or higher.
+
+### Include Css
+
+1. Import sodexo-style in your application code:
+```javascript
+import '@dilicorp/ui/dist/css/style.min.css';
+```
+
+2. include Font from a CDN URL in your HTML layout:
+```html
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+```
+
+### Import components:
+
+```jsx
+import React from 'react';
+import { Button } from '@dilicorp/ui';
+
+export default (props) => {
+  return (
+    <Button color="primary">Click Me</Button>
+  );
+};
+```
+
+### Vendors
+
+[FontAwesome Icons Free](https://fontawesome.com/v5.15/icons?d=gallery&p=2) Version 5.*
+
+[Formik](https://formik.org/docs) Version 2.*
+
+[React Datepicker](https://reactdatepicker.com) Version. 4.*
+
+[React Dropzone](https://github.com/react-dropzone/react-dropzone/) Version. 11.*
+
+[React Input Mask](https://github.com/sanniassin/react-input-mask/tree/v2) Version 2.*
+
+[React JS Pagination](https://github.com/wwwaiser/react-js-pagination) Version 3.*
+
+[React Select](https://react-select.com)
+
+[Yup](https://github.com/jquense/yup) Version 0.32.*

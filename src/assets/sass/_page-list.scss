@@ -1,0 +1,21 @@
+.aside-filter {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  padding: 30px 15px;
+  max-width: 320px;
+  right: -320px;
+  z-index: 9990;
+  transition: right .3s ease;
+  background-color: rgba(170, 170, 170, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+  -o-backdrop-filter: blur(4px);
+  -moz-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+
+  &.in {
+    right: 0;
+  }
+}

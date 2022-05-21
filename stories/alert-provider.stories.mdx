@@ -1,0 +1,64 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Components/AlertProvider/Use" />
+
+## Usage:
+
+First you have to wrap your app with the Provider giving it the alert template and optionally some options:
+
+```tsx
+import React from 'react'
+import { AlertProvider } from '@dilicorp/ui'
+import App from './App'
+
+const Root = () => (
+  <AlertProvider>
+    <App />
+  </AlertProvider>
+)
+
+render(<Root />, document.getElementById('root'))
+```
+
+Then import the useAlert hook to be able to show alerts:
+
+```tsx
+// App.js
+import React from 'react'
+import { useAlert, Button } from '@dilicorp/ui'
+
+const App = () => {
+  const alert = useAlert()
+
+  return (
+    <Button
+      onClick={() => {
+        alert.show('Oh look, an alert!')
+      }}
+    >
+      Show Alert
+    </button>
+  )
+}
+
+export default App
+```
+
+And that's it!
+
+You can also use it with a HOC:
+
+```tsx
+// App.js
+import React from 'react'
+import { withAlert, Button } from '@dilicorp/ui'
+
+const App = ({ alert }) => (
+  <Button onClick={() => {
+      alert.show('An alert!')
+    }
+  }>Show Alert</button>
+)
+
+export default withAlert()(App)
+```

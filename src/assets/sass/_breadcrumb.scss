@@ -1,0 +1,26 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  color: var(--di-gray-800);
+  font-size: .9rem;
+  line-height: 1;
+
+  > div {
+    margin-right: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--di-gray-800);
+    line-height: 1;
+    margin-right: 5px;
+
+    &:hover {
+      color: var(--di-primary);
+    }
+  }
+  span {
+    line-height: 1;
+    color: var(--di-gray-500);
+  }
+}

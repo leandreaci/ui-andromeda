@@ -1,0 +1,17 @@
+src
+stories
+
+.DS_Store
+._*
+.git
+.hg
+.npmrc
+.lock-wscript
+npm-debug.log
+.storybook
+.husky
+.idea
+.eslintignore
+.eslintrc.js
+.lintstagedrc
+

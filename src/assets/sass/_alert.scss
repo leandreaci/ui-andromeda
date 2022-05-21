@@ -1,0 +1,50 @@
+.alert-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 70;
+}
+
+.alert-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  z-index: 71;
+  background-color: var(--di-white);
+  border-radius: 4px;
+  max-width: 300px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 0.15);
+  border: 2px solid transparent;
+
+  &.success {
+    border-color: var(--di-success);
+  }
+
+  &.info {
+    border-color: var(--di-info);
+  }
+
+  &.warning {
+    border-color: var(--di-warning);
+  }
+
+  &.danger {
+    border-color: var(--di-danger);
+  }
+
+  .alert-body {
+
+  }
+
+  .alert-footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

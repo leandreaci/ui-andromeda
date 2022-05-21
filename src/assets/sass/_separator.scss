@@ -1,0 +1,12 @@
+.line-separator {
+  border-bottom: 1px solid transparent;
+  margin: 1rem 0;
+
+  &.default   { border-bottom-color: var(--di-gray-300) }
+  &.primary   { border-bottom-color: var(--di-primary) }
+  &.secondary { border-bottom-color: var(--di-secondary) }
+  &.success   { border-bottom-color: var(--di-success) }
+  &.danger    { border-bottom-color: var(--di-danger) }
+  &.warning   { border-bottom-color: var(--di-warning) }
+  &.info      { border-bottom-color: var(--di-info) }
+}

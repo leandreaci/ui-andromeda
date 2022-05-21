@@ -1,0 +1,53 @@
+table, .table {
+  caption-side: bottom;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  font-size: 0.9rem;
+  color: var(--di-black);
+}
+
+.table-striped>tbody>tr {
+  background-color: var(--di-white);
+}
+
+.table>thead {
+  vertical-align: bottom;
+}
+
+tbody, td, tfoot, th, thead, tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+.table>:not(caption)>*>* {
+  padding: 0.56rem 0.4rem;
+  border-bottom: 1px solid var(--di-gray-300);
+}
+
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: var(--di-gray-100);
+}
+
+.table-hover>tbody>tr:hover>* {
+  background-color: var(--di-gray-200);
+}
+
+.table>tbody {
+  vertical-align: inherit;
+}
+
+table>:not(:first-child) {
+  border-top: 2px solid var(--di-gray-400);
+}

@@ -1,0 +1,147 @@
+.circle {
+  border-radius: 50%;
+}
+
+.rounded {
+  border-radius: 4px;
+}
+
+.float-start {
+  float: left;
+}
+
+.float-end {
+  float: right;
+}
+
+.card>:last-child {
+  margin-bottom: 0;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid $gray-300;
+  margin: 1rem 0;
+}
+
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute!important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0!important;
+  margin: -1px !important;
+  overflow: hidden!important;
+  clip: rect(0,0,0,0)!important;
+  white-space: nowrap!important;
+  border: 0!important;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.position-static {
+  position: static;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+.white-space-normal {
+  white-space: normal;
+}
+
+.truncate-line {
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
+  max-width:1px;
+}
+
+.text-primary   { color: var(--di-primary); }
+.text-secondary { color: var(--di-secondary); }
+.text-success   { color: var(--di-success); }
+.text-info      { color: var(--di-info); }
+.text-danger    { color: var(--di-danger); }
+.text-warning   { color: var(--di-warning); }
+
+.bg-primary   { background-color: var(--di-primary); }
+.bg-secondary { background-color: var(--di-secondary); }
+.bg-success   { background-color: var(--di-success); }
+.bg-info      { background-color: var(--di-info); }
+.bg-danger    { background-color: var(--di-danger); }
+.bg-warning   { background-color: var(--di-warning); }
+
+div#__react-alert__ {
+  > div {
+    pointer-events: auto !important;
+  }
+}

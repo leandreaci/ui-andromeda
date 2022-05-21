@@ -1,0 +1,37 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Molecules/Alert/Install" />
+
+## Getting Started
+
+1. Include a div with id `alert-portal` in your HTML layout:
+```html
+<body>
+  <div id="alert-portal"></div>
+</body>
+```
+
+### Example:
+
+```tsx
+import React from 'react';
+import { Alert, AlertProps, AlertRef, Button } from '@dilicorp/ui';
+
+const Example = () => {
+  const alertRef = React.useRef<AlertRef>(null)
+
+  const open = () => {
+    alertRef.current?.open()
+  }
+
+  return (
+    <>
+      <Button onClick={open}>Show Alert</Button>
+      <Alert ref={alertRef}>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </Alert>
+    </>
+  )
+}
+
+```

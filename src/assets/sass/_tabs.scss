@@ -1,0 +1,45 @@
+.tabs {
+  .tab-list {
+    border-bottom: 1px solid var(--di-gray-300);
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    margin-bottom: 10px;
+
+    .tab {
+      position: relative;
+      padding: 5px;
+      margin: 0 5px;
+      cursor: pointer;
+      color: var(--di-black);
+      text-decoration: none;
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        height: 2px;
+        width: 0;
+        transition: width .3s ease;
+      }
+
+      &:hover,
+      &.active {
+        color: var(--di-primary);
+
+        &:before {
+          width: 100%;
+          background: var(--di-primary);
+        }
+      }
+    }
+  }
+
+  .tab-panel {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}

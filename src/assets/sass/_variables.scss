@@ -1,0 +1,72 @@
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #313131 !default;
+
+:root {
+  --di-black: #{$black};
+}
+
+$primary:   #812530 !default;
+$secondary: #923641 !default;
+$success:   #00b894 !default;
+$info:      #0984e3 !default;
+$warning:   #fdcb6e !default;
+$danger:    #d63031 !default;
+
+$color-contrast-dark:      $black !default;
+$color-contrast-light:     $white !default;
+
+$font-sans-serif: 'Ubuntu', sans-serif !default;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger
+) !default;
+
+$color-contrast-dark:      $black !default;
+$color-contrast-light:     $white !default;
+
+$btn-hover-bg-shade-amount:       15% !default;
+$btn-hover-bg-tint-amount:        15% !default;
+$btn-hover-border-shade-amount:   20% !default;
+$btn-hover-border-tint-amount:    10% !default;
+$btn-active-bg-shade-amount:      20% !default;
+$btn-active-bg-tint-amount:       20% !default;
+$btn-active-border-shade-amount:  25% !default;
+$btn-active-border-tint-amount:   10% !default;
+
+$variable-prefix: di- !default;
+$min-contrast-ratio:   4.5 !default;
+
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%
+) !default;
+
+$spacer: 1rem !default;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+
+$negative-spacers: if(false, negativify-map($spacers), null) !default;
+
+$border-radius: .25rem !default;

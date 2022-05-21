@@ -1,0 +1,28 @@
+{
+  "exclude": [
+    "node_modules",
+    "dist",
+    "./stories"
+  ],
+  "include": [
+    "node_modules",
+    "src"
+  ],
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "es6",
+    "module": "es6",
+    "lib": ["es6", "dom", "dom.iterable"],
+    "allowJs": true,
+    "jsx": "react",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": false,
+    "outDir": "./dist",
+    "rootDirs": ["./src", "./stories"],
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
